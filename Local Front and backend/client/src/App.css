@@ -1,0 +1,81 @@
+/*This is the main container that contains everything inside it*/
+.container{
+  /*The content will be displayed in a single block of information*/
+  display:block;
+  /*The size of the container is set to 100% of the screen*/
+  width: 100%;
+  height: 100%;
+}
+/*This is one of the 2 sub containers of the main container*/
+.containerTop{
+  /*This allows the sub container/objects inside to use flex properties*/
+  display: flex;
+  /*Flex direction sets which way the contents will be displayed this is set to horizontally*/
+  flex-direction: row;
+  /*Flex wrap, wraps content that would be outside of the container to the next line/column*/
+  flex-wrap: wrap;
+  /*This sets where the content will be in this case it will be in the center of the container*/
+  justify-content: center;
+  /*This sets where the content will be in this case it will be in the center of the container*/
+  align-content: center;
+  /*The size of the container is set to a custom size of the main container*/
+  width: 100%;
+  height: 5vh;
+}
+/*This is one of the 2 sub containers of the main container*/
+.containerBottom{
+  display: flex;
+  /*Flex direction sets which way the contents will be displayed this is set to vertically*/
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*This sets where the content will be in this case it will be in the top of the container*/
+  justify-content: top;
+  align-items: top;
+  /*The size of the container is set to a custom size of the main container*/
+  width: 100%;
+  height: 100%;
+}
+/*This container just alligns what ever is inside of it to the center of the screen*/
+.center-mid{
+  display: flex;
+  justify-content: center;
+}
+/*This container is used for rendering the ptients data in a grid/table layout*/
+.gridContainer{
+  /*This allows the containers/objects inside of it to be organised in a grid/table layout*/
+  display: grid;
+  /*Creates the table with 6 columns with each column being 16.6% of the container*/
+  grid-template-columns:repeat(6,16.6%);
+  /*Automaticly places the new grid in a column arangment*/
+  grid-auto-flow: column;
+  /*Creates a gap between each row of the records*/
+  padding: 1px;
+  /*Alligns the contents in the container to the center of the container*/
+  align-content: center;
+}
+/*This container sets the paramaters of each cell in the grid/table*/
+.grid-item {
+  /*Sets the boarder size, colour, and that its solid*/
+  border: 1px solid black;
+  /*Sets the gap between the value in the cell and the cell boarder */
+  padding: 10px;
+  /*Sets the font size of the text in the cells*/
+  font-size: 20px;
+  /*Alligns the text to the left of the cell*/
+  text-align: left;
+}
+/*Sets the size of the label element*/
+label{
+  width: 16.6%;
+  height: 2vh;
+}
+/*Sets the size of the input element*/
+input{
+  width: 16.6%;
+  height: 2vh;
+}
+/*Sets the size of the button element*/
+button{
+  width: 16.6%;
+  height: 2vh;
+}
